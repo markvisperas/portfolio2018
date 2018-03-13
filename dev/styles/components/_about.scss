@@ -1,0 +1,49 @@
+// ABOUT
+
+.about{
+    padding: 0px 0px;
+    display: flex;
+    // height: 70vh;
+}
+
+.bio{
+    width: 50%;
+    position: relative;
+    // background-color: #ffe8e3;
+}
+
+.bio article{
+    padding: 50px;
+    position: absolute;
+    // z-index: 100;
+    // left: -50px;
+    // top: 20%;
+    // box-shadow: 5px 5px 30px rgba(61, 61, 61, 0.5);
+}
+
+.portrait{
+    width: 50%;
+}
+
+.portrait__container{
+    width: 400px;
+    height: 400px;
+    background-image: url(../../public/assets/self3.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.portrait__container img{
+    width: 100%;
+}
+
+.about h1{
+    text-align: left;
+}
+
+.about h2{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}

@@ -1,0 +1,43 @@
+// PORTFOLIO
+
+.portfolio{
+    margin-top: 100px;;
+}
+
+.portfolio__container{
+    display: flex;
+}
+
+.website{
+    width: 200%;
+    // background-color: rgb(192, 227, 250);
+    // padding: 125px 0px;
+
+// .decription{
+//     width: 20%;
+// }
+}
+
+.description article{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30%;
+}
+
+.description h2{
+    text-align: left;
+}
+
+.description p{
+    margin-top: 30px;
+}
+
+.website figure{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+
+.website img{
+    width: 100%;
+}

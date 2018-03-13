@@ -1,0 +1,38 @@
+// TYPOGRAPHY
+
+h1, h2, h3, li{
+    margin: 0;
+    color: rgb(65, 58, 58);
+    font-family: 'Hammersmith One', sans-serif;
+    // font-family: Arial, Helvetica, sans-serif;
+}
+
+// h1{
+//     font-family: Arial, Helvetica, sans-serif;
+//     color: rgb(65, 58, 58);
+// }
+
+
+h4{
+    font-family: 'Poiret One', cursive;
+    color: rgb(65, 58, 58);
+}
+
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center; 
+}
+
+h3{
+    font-size: 20px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}

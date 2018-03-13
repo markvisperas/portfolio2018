@@ -1,0 +1,114 @@
+// CONTACT
+
+.contact{
+    display: flex;
+    height: 80vh;
+}
+
+.contact__info{
+    // background-color: rgb(253, 236, 159);
+    width: 50%;
+}
+
+.contact__form{
+    width: 50%;
+    background-color: rgb(243, 146, 135);
+}
+
+.contact__info article{
+    padding-top: 100px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact h2{
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.footer__icons{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    justify-content: flex-start;
+    padding: 40px 0px 40px 0px;
+}
+
+.footer__icons li{
+    background-color:rgb(38, 153, 134);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.footer__icons i{
+    font-size: 1.5rem;
+    color: antiquewhite;
+}
+
+.fa-twitter{
+    transform: translateY(50%) translateX(70%);
+}
+
+.fa-facebook{
+    transform: translateY(50%) translateX(120%);
+}
+
+.fa-linkedin{
+    transform: translateY(50%) translateX(70%);
+}
+
+.fa-instagram{
+    transform: translateY(50%) translateX(70%);
+}
+
+.contact form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.input__wrapper{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+
+.input__wrapper h3{
+    color: white;
+}
+
+.input__wrapper label{
+    padding-right: 10px;
+}
+
+form h3{
+    color: white;
+}
+
+input{
+    border-style: none;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(243, 146, 135);
+}
+
+textarea{
+    border-style: none;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(243, 146, 135);
+    padding: 12px;  
+}
+
+form button{
+    width: 120px;
+    border: 2px solid white;
+    background-color: rgb(243, 146, 135);
+    padding: 10px 15px;
+    margin: 40px 0px 100px 0px;
+
+}
