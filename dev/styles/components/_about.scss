@@ -3,7 +3,7 @@
 .about{
     padding: 0px 0px;
     display: flex;
-    // height: 70vh;
+    height: 100vh;
 }
 
 .bio{
@@ -15,10 +15,6 @@
 .bio article{
     padding: 50px;
     position: absolute;
-    // z-index: 100;
-    // left: -50px;
-    // top: 20%;
-    // box-shadow: 5px 5px 30px rgba(61, 61, 61, 0.5);
 }
 
 .portrait{
@@ -46,4 +42,35 @@
     text-align: center;
     width: 50%;
     margin: 0 auto;
+}
+
+@media (max-width: 940px) {
+    .about{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .bio{
+        width: 100%;
+    }
+
+    .bio article{
+        padding: 20px;
+    }
+
+    .portrait{
+        width: 100%;
+    }
+
+    .portrait__container{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portrait__container{
+        width: 250px;
+        height: 250px;
+    }
 }

@@ -10,18 +10,12 @@
 
 .website{
     width: 200%;
-    // background-color: rgb(192, 227, 250);
-    // padding: 125px 0px;
-
-// .decription{
-//     width: 20%;
-// }
 }
 
 .description article{
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 .description h2{
@@ -29,15 +23,51 @@
 }
 
 .description p{
-    margin-top: 30px;
+    margin: 30px 0px;
+
+}
+
+.website{
+    width: 100%;
 }
 
 .website figure{
     width: 100%;
     margin: 0 auto;
-    padding: 50px 40px;
+    padding: 10px;
 }
 
 .website img{
     width: 100%;
+}
+
+@media (max-width: 940px) {
+  
+
+}
+@media (max-width: 768px) {
+      .portfolio__container{
+        flex-direction: column;
+    }
+
+    .website img{
+        width: 100%;
+    }
+
+    .description article{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .movie{
+        flex-direction: column-reverse;
+    }
+
+    .camping{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 480px) {
 }

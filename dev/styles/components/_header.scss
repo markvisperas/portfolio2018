@@ -1,9 +1,9 @@
 // HEADER
 
+$salmon: #f39287;
+
 .hero {
-    // background-color: #e4fff8;
-    height: 80vh;
-    // margin-top: 100px;
+    height: 90vh;
     position: relative;
     display: flex;
 }
@@ -19,17 +19,13 @@
 
 .greeting h1{
     z-index: 100;
-    color: rgb(90, 90, 99);
+    color: #5a5a63;
     font-size: 3rem;
 }
 
 .name{
     color: rgb(38, 153, 134);
     font-size: 3rem;
-}
-
-.job{
-    color: rgb(243, 146, 135);
 }
 
 .side__tag h3{
@@ -40,20 +36,6 @@
     padding: 0px 20px;
     margin-left: 30%;
     z-index: 3;
-    // color: rgb(168, 165, 165);
-    // // transform: rotate(180deg);
-    // // text-align: center;
-}
-
-.photo{
-    width: 300px;
-    height: 300px;
-    background-image: url(../../public/assets/self1.jpg);
-    background-size: cover;
-    border-radius: 50%;
-    position: relative;
-    top:-200px;
-    left: 400px;
 }
 
 .main__nav{
@@ -74,6 +56,33 @@
     padding: 20px 40px 20px 0px;
 }
 
+.main__nav {
+    a:last-child{
+        li {
+            padding-right: 0px;
+        }
+    }
+}
+
+.hoverLine {
+    display: inline-block;
+    color: $salmon;
+    text-decoration: none;
+}
+
+.hoverLine::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: $salmon;
+    transition: width .3s;
+}
+
+.hoverLine:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
 
 .logo{
     position: absolute;
@@ -92,4 +101,68 @@
 
 .accent img{
     width: 100%;
+}
+
+.arrow__down{
+    margin: 0 auto;
+    width: 70px;
+    transition: 0.2s;
+}
+
+.arrow__down:hover{
+    padding-top: 8px;
+}
+
+.arrow__down img{
+    width: 70px;
+}
+
+@media (max-width: 958px) {
+    .greeting{
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .wrapper{
+        width: 90%;
+    }
+
+    .greeting{
+        top: 20%;
+        left: 0%;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .accent{
+        margin: 0 auto;
+    }
+
+    .greeting h1{
+        font-size: 2rem;
+        text-align: center;
+        }
+
+    .side__tag{
+        display: none;
+    }
+
+    .main__nav ul{
+        justify-content: center;
+        padding: 0;
+    }
+
+    .main__nav li{
+        padding: 0px 10px;
+    }
+
+    li {
+    margin-bottom: 10px;
+    }
+
+    .fullName{
+        margin-bottom: 30px;
+    }
 }

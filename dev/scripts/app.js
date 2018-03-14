@@ -1,15 +1,19 @@
-console.log('hello');
-
 var instance = new TypeIt('#typeIt', {
   strings: ['This is my string!']
   // other options
 });
 
-const numbers = [1, 2, 3, 4, 5];
-console.log(numbers);
-
-
 portfolio.events = () => {
+  $(".nameLink").click(function () {
+    $('html, body').animate({
+      scrollTop: $("#home").offset().top
+    }, 500);
+  });
+  $(".arrow").click(function () {
+    $('html, body').animate({
+      scrollTop: $("#portfolio").offset().top
+    }, 500);
+  });
   $(".portfolioLink").click(function () {
     $('html, body').animate({
       scrollTop: $("#portfolio").offset().top

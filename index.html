@@ -15,32 +15,34 @@
 <body>
 	<div class="main__wrapper">
 		<section class="side__tag">
-			<h3>
-				<img src="/public/assets/Poster.png" alt="">
-				Mark Visperas
-			</h3>
+			<a href="#hero" class="nameLink">
+				<h3>
+					<img src="/public/assets/Poster.png" alt="">
+					Mark Visperas
+				</h3>
+			</a>
 		</section>
 		<div class="wrapper">
 			<header>
 				<nav class="main__nav">
 					<div class="wrapper">
 						<ul>
-							<a class="portfolioLink" href="#portfolio">
+							<a class="hoverLine  portfolioLink" href="#portfolio">
 								<li>
 									<h3>Work</h3>
 								</li>
 							</a>
-							<a class="aboutLink" href="#about">
+							<a class="hoverLine aboutLink" href="#about">
 								<li>
 									<h3>About</h3>
 								</li>
 							</a>
-							<a class="skillsLink" href="#skills">
+							<a class="hoverLine skillsLink" href="#skills">
 								<li>
 									<h3>Skills</h3>
 								</li>
 							</a>
-							<a class="contactLink" href="#contact">
+							<a class="hoverLine contactLink" href="#contact">
 								<li>
 									<h3>Contact</h3>
 								</li>
@@ -48,22 +50,23 @@
 						</ul>
 					</div>
 				</nav>
-				<section class="hero">
+				<div class="hero" id="home">
 					<div class="greeting">
+						<h1 class="fullName"><span class="name">Mark Visperas</span>
+						<br></h1>
 						<h1 id="typeIt">
-							<span class="name">Howdy I'm Mark</span><br>
-							I'm a <span class="job">front-end developer</span><br>from Toronto. Welcome!
+							Howdy. I'm a <span class="job">front-end developer </span>from Toronto. Welcome!
 						</h1>
 						<div class="accent">
 							<img src="./public/assets/wavy.png" alt="">
 						</div>
 					</div>
-					<!-- <div class="logo">
-							<h4>
-								MV
-							</h4>	
-					</div>		 -->
-				</section>
+				</div>
+				<a class="arrow" href="#portfolio">
+					<div class="arrow__down">
+						<img src="./public/assets/arrow_down.png" alt="">
+					</div>
+				</a>
 			</header>	
 			<section class="portfolio" id="portfolio">
 				<div class="sectionTag">
@@ -76,7 +79,7 @@
 							<img src="./public/assets/project3_mockup.png" alt="">
 						</figure>
 					</div>
-					<div class="description">
+					<div class="description sleep">
 						<article>
 							<h2>Sleep Position Generator</h2>
 							<p>ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, adipisci voluptatibus nemo, eaque sit, dolore exercitationem
@@ -90,7 +93,7 @@
 						</article>
 					</div>
 				</div>
-				<div class="portfolio__container">
+				<div class="portfolio__container movie">
 					<div class="description">
 						<article>
 							<h2>Movie Soundtrack Finder</h2>
@@ -111,15 +114,56 @@
 						</figure>
 					</div>
 				</div>
-				<div class="portfolio__container">
+				<div class="portfolio__container office">
 					<div class="website">
 						<figure>
-							<img src="./public/assets/project3_mockup.png" alt="">
+							<img src="./public/assets/project2_mockup.png" alt="">
 						</figure>
 					</div>
 					<div class="description">
 						<article>
-							<h2>Sleep Position Generator</h2>
+							<h2>PSD Conversion</h2>
+							<p>ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, adipisci voluptatibus nemo, eaque sit, dolore exercitationem
+								ad fuga quasi dicta necessitatibus esse provident repellendus asperiores reiciendis dolor quos molestias ex.</p>
+							<button class="live">
+								<h3>LIVE</h3>
+							</button>
+							<button class="github">
+								<h3>GITHUB</h3>
+							</button>
+						</article>
+					</div>
+				</div>
+				<div class="portfolio__container camping">
+					<div class="description">
+						<article>
+							<h2>Camping Pack App</h2>
+							<p>ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, adipisci voluptatibus nemo, eaque sit, dolore exercitationem
+								ad fuga quasi dicta necessitatibus esse provident repellendus asperiores reiciendis dolor quos molestias ex.</p>
+							<p>React/ API & AXIOS / Javascript / Responsive</p>
+							<button class="live">
+								<h3>LIVE</h3>
+							</button>
+							<button class="github">
+								<h3>GITHUB</h3>
+							</button>
+						</article>
+					</div>
+					<div class="website">
+						<figure>
+							<img src="./public/assets/project5_mockup.png" alt="">
+						</figure>
+					</div>
+				</div>
+				<div class="portfolio__container spy">
+					<div class="website">
+						<figure>
+							<img src="./public/assets/project4_mockup.png" alt="">
+						</figure>
+					</div>
+					<div class="description">
+						<article>
+							<h2>Spy App</h2>
 							<p>ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, adipisci voluptatibus nemo, eaque sit, dolore exercitationem
 								ad fuga quasi dicta necessitatibus esse provident repellendus asperiores reiciendis dolor quos molestias ex.</p>
 							<button class="live">
@@ -134,127 +178,130 @@
 			</section>
 		</div>
 		<div class="wrapper">
-		<section class="about" id="about">
-			<div class="portrait">
-				<div class="portrait__container">
+			<section class="about" id="about">
+				<div class="portrait">
+					<div class="portrait__container">
+					</div>
 				</div>
-			</div>
-			<div class="bio">
-				<article>
-					<h1>About Me</h1>
-					<p>I'm Mark Visperas, and I'm a front-end developer in Toronto, Ontario. I'm really passionate about clean code that is accessible, modular, and has great UX. I'm also interested in crafting well-performing websites for all users.</p>
-					<p>When I'm not coding, you can find me exploring the city.</p>
-					<!-- <div class="photo">
-					</div> -->
-				</article>
-			</div>
-		</section>
-		<section class="skills" id="skills">
+				<div class="bio">
+					<article>
+						<h1>About Me</h1>
+						<p>I'm Mark Visperas, and I'm a front-end developer in Toronto, Ontario. I'm really passionate about clean code that is accessible, modular, and has great UX. I'm also interested in crafting well-performing websites for all users.</p>
+						<p>When I'm not coding, you can find me exploring the city.</p>
+					</article>
+				</div>
+			</section>
+			<section class="skills" id="skills">
+				<div class="sectionTag">
+					<img src="/public/assets/hline.png" alt="">
+					<h3>Skills & Tools</h3>
+				</div>
+				<div class="skills_container">
+					<div class="skills_icons">
+						<i class="devicon-html5-plain-wordmark"></i>
+						<p>HTML
+						</p>
+					</div>
+					<div class="skills_icons">
+						<i class="devicon-css3-plain-wordmark"></i>
+						<p>CSS3</p>
+					</div>
+					<div class="skills_icons">
+						<i class="devicon-javascript-plain"></i>
+						<p>JAVASCRIPT</p>
+					</div>
+					<div class="skills_icons">
+						<i class="devicon-jquery-plain-wordmark"></i>
+						<p>JQUERY</p>
+					</div>
+					<div class="skills_icons">
+						<i class="devicon-sass-original"></i>
+						<p>SASS</p>
+					</div>
+					<div class="skills_icons">
+						<i class="devicon-git-plain"></i>
+						<p>GIT</p>
+					</div>
+					<div class="skills_icons">
+						<i class="devicon-github-plain"></i>
+						<p>GITHUB</p>
+					</div>
+					<div class="skills_icons">
+						<i class="devicon-react-original"></i>
+						<p>REACT</p>
+					</div>
+					<div class="skills_icons">
+						<i class="devicon-gulp-plain"></i>
+						<p>GULP</p>
+					</div>
+					<div class="skills_icons">
+						<div class="res_container">
+							<img src="./public/assets/res_icon.png" alt="">
+							<p>RESPONSIVE</p>
+						</div>
+					</div>
+				</div>
+			</section>
 			<div class="sectionTag">
 				<img src="/public/assets/hline.png" alt="">
-				<h3>Skills and Tools</h3>
+				<h3>Let's Connect!</h3>
 			</div>
-			<div class="skills_container">
-				<div class="skills_icons">
-					<i class="devicon-html5-plain-wordmark"></i>
-					<p>HTML
-					</p>
-				</div>
-				<div class="skills_icons">
-					<i class="devicon-css3-plain-wordmark"></i>
-					<p>CSS3</p>
-				</div>
-				<div class="skills_icons">
-					<i class="devicon-javascript-plain"></i>
-					<p>JAVASCRIPT</p>
-				</div>
-				<div class="skills_icons">
-					<i class="devicon-jquery-plain-wordmark"></i>
-					<p>JQUERY</p>
-				</div>
-				<div class="skills_icons">
-					<i class="devicon-sass-original"></i>
-					<p>SASS</p>
-				</div>
-				<div class="skills_icons">
-					<i class="devicon-git-plain"></i>
-					<p>GIT</p>
-				</div>
-				<div class="skills_icons">
-					<i class="devicon-github-plain"></i>
-					<p>GITHUB</p>
-				</div>
-				<div class="skills_icons">
-					<i class="devicon-react-original"></i>
-					<p>REACT</p>
-				</div>
-				<div class="skills_icons">
-					<i class="devicon-gulp-plain"></i>
-					<p>GULP</p>
-				</div>
-				<div class="skills_icons">
-					<div class="res_container">
-						<img src="./public/assets/res_icon.png" alt="">
-						<p>RESPONSIVE</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<div class="sectionTag">
-			<img src="/public/assets/hline.png" alt="">
-			<h3>Let's Connect!</h3>
 		</div>
-		<section class="contact" id="contact">
-			<div class="contact__info">
-				<article>	
-					<h2>Let's CREATE and COLLABORATE!</h2>
-					<p>e: markvisperas@hotmail.com</p>
-					<ul class="footer__icons">
-						<li>
-							<i class="fa fa-twitter"></i>
-						</li>
-						<li>
-							<i class="fa fa-facebook"></i>
-						</li>
-						<li>
-							<i class="fa fa-linkedin"></i>
-						</li>
-						<li>
-							<i class="fa fa-instagram"></i>
-						</li>
-					</ul>
-				</article>
-			</div>
-			<div class="contact__form">
-				<form action="https://formspree.io/markvisperas@hotmail.com" method="POST">
-					<h2>Or leave me a message</h2>
-					<div class="input__wrapper">
-						<label for="name">
-							<h3>Name:</h3>
-						</label>
-						<input type="name" name="name">
-					</div>
-					<div class="input__wrapper">
-						<label for="email">
-							<h3>Email:</h3>
-						</label>
-						<input type="email" name="_replyto">
-					</div>
-					<div class="input__wrapper">
-						<label for="message">
-							<h3>Message:</h3>
-						</label>
-						<textarea name="message" id="textarea" >
+		<div class="contactWrapper">
+			<section class="contact" id="contact">
+				<div class="contact__info">
+					<article>	
+						<h2>Let's CREATE and COLLABORATE!</h2>
+						<p>e: markvisperas@hotmail.com</p>
+						<ul class="footer__icons">
+							<li>
+								<i class="fa fa-twitter"></i>
+							</li>
+							<li>
+								<i class="fa fa-facebook"></i>
+							</li>
+							<li>
+								<i class="fa fa-linkedin"></i>
+							</li>
+							<li>
+								<i class="fa fa-instagram"></i>
+							</li>
+						</ul>
+					</article>
+				</div>
+				<div class="contact__form">
+					<form action="https://formspree.io/markvisperas@hotmail.com" method="POST">
+						<h2>Or leave me a message 👌🏽</h2>
+						<div class="input__wrapper">
+							<label for="name">
+								<h3>Name:</h3>
+							</label>
+							<input type="name" name="name">
+						</div>
+						<div class="input__wrapper">
+							<label for="email">
+								<h3>Email:</h3>
+							</label>
+							<input type="email" name="_replyto">
+						</div>
+						<div class="input__wrapper">
+							<label for="message">
+								<h3>Message:</h3>
+							</label>
+							<textarea name="message" id="textarea" >
 
-						</textarea>
-					</div>
-					<button type="submit" value="Send">
-						<h3>submit</h3>
-					</button>
-				</form>
-			</div>
-		</section>
-		</div>
+							</textarea>
+						</div>
+						<button type="submit" value="Send">
+							<h3>submit</h3>
+						</button>
+					</form>					
+				</div>
+			</section>
+		</div><!-- to close wrapper -->
+		<footer>
+			<p>&copy; Mark Visperas 2018</p>
+		</footer>
 	<script src="https://cdn.jsdelivr.net/npm/typeit@5.5.2/dist/typeit.min.js"></script>
 	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
 	<script src="./public/scripts/app.js"></script>

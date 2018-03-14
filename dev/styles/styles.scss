@@ -5,12 +5,13 @@
 @import "components/_about.scss";
 @import "components/_skills.scss";
 @import "components/_contact.scss";
+@import "components/_footer.scss";
 
 body{
     background-color: antiquewhite;
 }
 
-$salmon: rgb(243, 146, 135);
+$salmon: #f39287;
 
 .about, .portfolio, .skills, .portfolio{
     padding-top: 100px;
@@ -37,10 +38,19 @@ $salmon: rgb(243, 146, 135);
     overflow-x: hidden;
 }
 
-button{
+.portfolio button{
      padding: 10px 20px;
      background-color: antiquewhite;
      border: 2px solid rgb(65, 58, 58);
+     transition: 0.3s all ease;
+}
+
+.portfolio button:hover{
+    border: 2px solid $salmon;
+    background-color: $salmon;
+    h3{
+        color: antiquewhite;
+    }
 }
 
 a{
