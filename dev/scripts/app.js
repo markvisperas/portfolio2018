@@ -1,6 +1,6 @@
 var instance = new TypeIt('#typeIt', {
-  strings: ['This is my string!']
-  // other options
+  strings: [''],
+  speed: 50,
 });
 
 portfolio.events = () => {
